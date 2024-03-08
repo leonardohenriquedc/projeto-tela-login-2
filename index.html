@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles/styles-mobile.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="styles/styles-desktop.css" media="(min-width: 601px)">
+    <script defer src="int.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            LATAM
+        </h1>
+        <nav>
+            <ul>
+                <li><a id="btSingIn" href="#">Sing-in</a></li>
+                <li><a id="btSingUp" href="#">Sing-up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="singUp" style="display: flex;">
+        <h2>
+            Sing-up
+        </h2>
+        <form id="capDadosCd">
+            <input type="email" name="iOne" id="emailCp" placeholder="Digite seu email" required>
+
+            <input type="number" name="iOne" id="cpf" placeholder="Digite seu cpf" min="11" max="11" required >
+
+            <input type="password" name="iOne" id="passCd" placeholder="Crie uma senha" min="10" max="15" required>
+
+            <div>
+                <label for="dateNasc">
+                    Data de nascimento:
+                </label>
+                <input type="date" name="dateNasc" id="dateNasc">
+            </div>
+
+            <label id="tituloMel">
+                Selecione sua % de melanina
+            </label>
+
+            <div>
+                <label for="melaninaMin" name="melanina" >
+                    0% de melanina
+                </label>
+                <input type="radio" name="melanina" name="ncl" id="melaninaMin">
+            </div>
+
+            <div>
+                <label for="melaninaMed" name="melanina" >
+                    50% de melanina
+                </label>
+                <input type="radio" name="melanina" name="ncl" id="melaninaMed">
+            </div>
+
+            <div>
+                <label for="melaninaMax" name="melanina" >
+                    100% de melanina
+                </label>
+                <input type="radio" name="melanina" id="melaninaMax">
+            </div>
+
+            <div>
+                <label for="paises">
+                    Reside em:
+                </label>
+                <select name="paises" id="paises" >
+                    <option value="1">
+                        Sul-American
+                    </option>
+                    <option value="2">
+                        Europa
+                    </option>
+                    <option value="3">
+                        Asia
+                    </option>
+                    <option value="4">
+                        Norte-American
+                    </option>
+                    <option value="5">
+                        Africa
+                    </option>
+                    <option value="6">
+                        Oceania
+                    </option>
+                </select>
+            </div>
+
+            <input type="submit" value="Inscrever-se">
+
+        </form>
+    </main>
+    <main id="singIn" style="display: none;">
+        <h2>
+            Sing-in
+        </h2>
+        <form id="capDados">
+            <input type="email" name="singIn" id="email" placeholder="Digite seu email" required> 
+            <input type="password" name="singIn" id="pass" placeholder="Digite sua senha" required>
+            <div id="buttonsSingIn">
+                <input type="button" value="Entrar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <form action="">
+            <input type="text" name="feedBack" id="feedBack" placeholder="Deixe seu comentario aqui">
+            <div>
+                <input type="button" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../midias/foto-fundo-body.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+
+/* Area do header */
+
+header{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 5vh;
+}
+
+header > h1{
+    
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 0px #ffffff7c;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > nav > ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header > nav > ul > li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 10px 90px;
+    background-color: #7ddbbc;
+    border-radius: 5px;
+    box-shadow: -1px -1px 2px black;
+}
+
+header > nav > ul > li > a:hover{
+    box-shadow: -1px -1px 5px black;
+}
+
+/* Area do main */
+
+main#singUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff71;
+    width: 60%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 7px black;
+}
+
+main#singUp > h2{
+    padding: 15px;
+    margin: 5px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: -1px -1px 2px #000000;
+}
+
+main#singUp > form{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main#singUp > form > input[name = "iOne"]{
+    width: 40vw;
+    height: 30px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+
+#tituloMel{
+    border: 1px solid black;
+    background-color: #7ddbbc;
+    padding: 15px;
+    width: 40vw;
+    box-shadow: -1px -1px 2px black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+main#singUp > form > div{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 190px;
+    text-align: center;
+    background-color: #ffffff88;
+    cursor: pointer;
+}
+
+main#singUp > form select{
+    cursor: pointer;
+}
+
+input[name = "melanina"], label[name = "melanina"]{
+    display: inline;
+}
+
+input[name = "melanina"]{
+    accent-color: #96713b;
+}
+
+main#singUp input[type = "submit"]{
+    width: 40vw;
+    height: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: -1px -1px 2px #0000007c;
+}
+
+main#singUp input[type = "submit"]:hover{
+    box-shadow: -1px -1px 3px #000000;
+    font-size: 1.6em;
+    transition: .7s;
+}
+
+
+/* main singIn */
+
+main#singIn{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff71;
+    width: 60%;
+    height: 40vh;
+    margin: auto;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 7px black;
+}
+
+main#singIn > h2{
+    padding: 15px;
+    margin: 5px auto;
+    background-color: aquamarine;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: -1px -1px 2px #000000;
+    
+}
+
+main#singIn > form{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main#singIn input[name = "singIn"]{
+    margin: 15px;
+    width: 40vw;
+    height: 40px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+
+div#buttonsSingIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+div#buttonsSingIn input{
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+div#buttonsSingIn input:hover{
+    box-shadow: 1px 1px 3px #000000;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 20px;
+    background-image: linear-gradient(to left, #7fffd485, #add8e665);
+    margin-top: 10px;
+    position: absolute;
+    top: calc(100% - 110px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+footer input[type = "text"]{
+    width: 80vw;
+    height: 40px;
+    text-align: center;
+    
+}
+
+footer > form > div > input{
+    width: 70px;
+    height: 30px;  
+}
