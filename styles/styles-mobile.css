@@ -86,6 +86,7 @@ main#singUp{
     border-radius: 15px;
     padding: 10px;
     box-shadow: 0px 0px 7px black;
+    
 }
 
 main#singUp > h2{
@@ -96,6 +97,7 @@ main#singUp > h2{
     width: 200px;
     text-align: center;
     box-shadow: -1px -1px 2px #000000;
+    
 }
 
 main#singUp > form{
@@ -175,7 +177,7 @@ main#singIn{
     height: 40vh;
     margin: auto;
     border-radius: 15px;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 0px 0px 7px black;
 }
 
@@ -227,6 +229,17 @@ div#buttonsSingIn input:hover{
 }
 
 footer{
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: -1;
+}
+
+footer section{
     width: 100%;
     display: flex;
     align-items: center;
@@ -235,10 +248,8 @@ footer{
     padding: 20px;
     background-image: linear-gradient(to left, #7fffd485, #add8e665);
     margin-top: 10px;
-    position: absolute;
-    top: calc(100% - 110px);
-    left: 50%;
-    transform: translateX(-50%);
+    
+
 }
 
 footer form{
